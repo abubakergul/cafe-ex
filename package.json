@@ -1,13 +1,23 @@
 {
   "name": "cafeex",
   "version": "1.0.0",
-  "description": "Cafe Ex",
+  "description": "",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abubakergul/cafe-ex.git"
+  },
   "author": "",
   "license": "ISC",
-  "keywords": []
+  "bugs": {
+    "url": "https://github.com/abubakergul/cafe-ex/issues"
+  },
+  "homepage": "https://github.com/abubakergul/cafe-ex#readme",
+  "dependencies": {
+    "parcel": "^2.4.0"
+  }
 }
