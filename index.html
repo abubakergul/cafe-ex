@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <div class="logo">
+        <img class="logo-image" src="images/logo.png" />
+        <span class="logo-name">Cafe <span class="EX">EX</span></span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Product</a></li>
+        <li><a href="#find-us">Find us</a></li>
+      </ul>
+      <div class="logo-cart">
+        <img class="user" src="images/user.png" />
+        <div class="shopping-div">
+          <div class="result hidden">
+            <p class="empty">card is empty</p>
+          </div>
+          <img class="shopping-cart" src="images/shopping-cart.png" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="home">
+        <img class="background-image" src="images/cafe2.jpg" />
+        <div class="home-content">
+          <h2>Fell Hungry!</h2>
+          <p>
+            We will provide you best breakfast, sandwitches, Soap, and deserts
+          </p>
+          <a href="#menu-container" class="btnOrder">Order</a>
+        </div>
+      </div>
+      <div id="products">
+        <div class="products-heading">
+          <span class="o">O<span class="our-products">ur Products</span></span>
+        </div>
+        <div class="products-content">
+          <div class="products-content-column">
+            <div class="product-heading">
+              <span class="product-firstLetter"
+                >S<span class="product-name">andwitches,&nbsp; </span></span
+              >
+              <span class="product-firstLetter"
+                >B<span class="product-name">reakfast,&nbsp; </span></span
+              >
+              <span class="product-firstLetter"
+                >S<span class="product-name">oap and&nbsp; </span></span
+              >
+
+              <span class="product-firstLetter">
+                D<span class="product-name">esrts</span></span
+              >
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
+              officiis, ipsum nisi iste reiciendis voluptatum molestias enim
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
+              officiis, ipsum nisi iste reiciendis voluptatum molestias enim .
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
+              officiis, ipsum nisi iste reiciendis voluptatum molestias enim
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
+              officiis, ipsum nisi iste reiciendis voluptatum molestias enim
+              <br />
+            </p>
+          </div>
+          <img class="image-products" src="images/beefburger2.jpg" />
+        </div>
+      </div>
+      <div class="menu">
+        <div class="search">
+          <div class="inputblock">
+            <input
+              name="Search"
+              id="Search"
+              type="text"
+              placeholder="Search item"
+            />
+          </div>
+          <div class="imgblock">
+            <img src="images/search.png" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button data-id="All" class="btn-filter">All</button>
+          <button data-id="Tea and Coffe" class="btn-filter">
+            Tea and Coffe
+          </button>
+          <button data-id="Breakfast" class="btn-filter">Breakfast</button>
+          <button data-id="Sandwitches" class="btn-filter">Sandwitches</button>
+          <button data-id="Cup Cake" class="btn-filter">Cup Cake</button>
+        </div>
+        <div id="menu-container"></div>
+        <!-- ?.... -->
+      </div>
+
+      <div class="overlay hidden">
+        <form action="login">
+          <button class="btn-closeModal">&times;</button>
+          <h2>Login</h2>
+          <p class="incorrect-info incorrect-hidden">
+            Inncorrect Email or password!!!
+          </p>
+          <p class="correct-info correct-hidden">
+            You have sucessfuly loged in
+          </p>
+          <label class="label-Email" for="">Email </label>
+          <input class="input-Email" type="text" />
+          <br />
+
+          <label for="">Password</label>
+          <input class="input-password" type="password" /> <br />
+          <div class="login-Button">
+            <a href="" class="btn-Login">Submit</a>
+          </div>
+          <div class="additional-information">
+            <a class="forget-password" href=""> Forget password?</a>
+            <span class="signup">Not a member <a href="">Sign up</a></span>
+          </div>
+        </form>
+      </div>
+      <section id="find-us">
+        <h2>Find Us</h2>
+        <div class="conpany-information">
+          <div class="locations">
+            <div class="call">
+              <img src="images/call.png" />
+              <span>Lorem ipsum dolor sit amet .</span>
+            </div>
+
+            <div class="pin">
+              <img src="images/pin.png" />
+              <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="gmail">
+              <img src="images/gmail.png" />
+              <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+          <div class="social-media-information">
+            <div class="facebook">
+              <img src="images/icon-facebook.svg" />
+              <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="instagram">
+              <img src="images/icon-instagram.svg" />
+              <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="twitter">
+              <img src="images/icon-twitter.svg" />
+              <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
